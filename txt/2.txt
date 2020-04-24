@@ -1,0 +1,455 @@
+https://github.com/korick/CDDA.git
+https://github.com/korick/2.git
+https://github.com/korick/Redmi_6.git
+https://github.com/transifex/transifex-client.git
+https://github.com/CleverRaven/Cataclysm-DDA.git
+https://github.com/pisskop/PKs_Rebalancing.git
+https://github.com/Noctifer-de-Mortem/nocts_cata_mod.git
+https://github.com/redxlaser15/Reds-Odd-Additions.git
+
+progit2-ru-2.0.0
+Pro Git 2nd Edition 2014 на русском
+
+origin исходный
+up-to-date своевременно, до настоящего времени
+unstage убрать из буфера
+fetch получать
+checkout проверять
+pull вытащить
+push толкнуть
+commit коммит
+remote удаленный
+upstream обновлённое
+merge слияние
+workflow рабочий процесс
+verbose подробный
+
+
+
+
+
+
+
+
+
+
+
+
+
+FILE TO GITHUB-REPO
+LOCAL-REPO TO GITHUB
+https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
+Windows http://cygwin.org
+
+.github\CONTRIBUTING.md
+
+Opening new issue? Please read ..\ISSUES.md
+https://github.com/CleverRaven/Cataclysm-DDA/blob/master/ISSUES.md
+
+1. ты работаешь только через консоль или же через git-gui? Советую второе (хотя это и обрезанное по самое не балуй недоприложение).
+1) В git bash переходишь в свой master (твой локальный репозиторий) командой git checkout master.
+2) git pull origin - эта команда обновляет твой master, скачивая все изменения с твоего origin (твой репозиторий на гитхабе). Чтобы и репозиторий на гитхабе был обновлён до последней версии, лично я пользуюсь https://upriver.github.io/ Наверняка есть и другие способы, в том числе и через bash, но мне лень их искать.
+3) Итак, твой локальный репозиторий полностью обновлён. Заходишь в git-gui, выбираешь в меню вверху Branch, затем Create. Вводишь имя для ветки, в разделе Starting revision выбираешь master. Создаётся ветка, основанная на твоём master.
+4) В твоём локальном репозитории ищешь файлы, которые хочешь изменить, и меняешь в них что-нибудь. После изменения нажимай в git-gui rescan. Программа покажет тебе изменения.
+5) Если они тебя устраивают, нажимай state changed. Потом - commit (не забудь написать описание), потом - push.
+6) Всё, твои изменения улетели в репозиторий на гитхабе. Заходишь на гитхабе в репозиторий CleverRaven, видишь там появившуюся строку "Your recently pushed changes", нажимаешь кнопку Compare. Создаешь таким образом PR.
+2. Работаю только онлайн, никакого стороннего ПО не использую.
+
+Windows XP http://gitforwindows.org/requirements.html
+
+splincode.github.io/text/git
+
+
+
+
+
+
+
+
+
+
+выводит информацию обо всех изменениях:
+внесенных в дерево директорий проекта по сравнению с последним коммитом рабочей ветки
+отдельно выводятся внесенные в индекс и неиндексированные файлы
+указывает файлы с неразрешенными конфликтами слияния
+файлы, игнорируемые git
+git checkout master
+git checkout -f
+git status
+
+# внести в индекс все изменения, включая все новые файлы
+cd
+ls
+cd ..
+
+cd CleverRaven/Cataclysm-DDA
+cd Noctifer-de-Mortem/nocts_cata_mod
+cd korick/CDDA
+cd pisskop/PKs_Rebalancing
+cd Dissociativity/PKs_Rebalancing
+cd Siyalatas/PKs_Rebalancing
+cd SomeDeadGuy/Cata-MSX-DeadPeopleTileset
+cd 23rd/PotPlayerExtentions
+git pull
+
+https://github.com/korick/2/blob/master/cataclysmdda-0.D-9112.zip
+https://github.com/korick/CDDA/raw/master/12_CDDA_Lore.doc
+
+git status
+git add --all
+git add .
+git commit -m "upd"
+git push -f
+
+# создание нового репозитория ветка master: запросит имя и пароль
+git clone или git init
+копируешь README.md в пустой репозиторий
+git add README.md
+git commit -m "first commit"
+git remote add origin gituser@githost:project.git или https://github.com/user.git
+git push -u origin master
+в .git\config прописываешь имя:пароль чтоб не вводить постоянно url = https://USER:PASSWORD@github.com/user.git
+
+# синхронизация Cataclysm-DDA если только ветка origin/master
+git pull
+
+# из индекса и дерева одновременно проекта файл можно удалить командой
+git rm FILE1 FILE2 — отдельные файлы
+
+# удалить из документации все файлы txt из папки
+git rm Documentation/\*.txt
+
+# сбросить нафиг весь индекс
+git reset
+
+# удалить из индекса конкретный файл
+git reset — EDITEDFILE
+
+# коммит автоматически индексируя изменения в файлах
+Новые файлы индексироваться не будут
+Удаление файлов будет учтено
+git commit -a
+
+# коммит прямо из командной строки вместо текстового редактора
+git commit -m «commit comment»
+
+# коммит на основе изменений единственного файла
+git commit FILENAME
+
+
+
+
+
+git add vk_changelog.txt
+git commit -m "mod123"
+git push -f
+
+git add 11_idea.txt
+git commit -m "0.C.6933 all rus gramatical error check"
+git push -f
+
+git add eng/08.3_idea_eng.txt
+git commit -m "modify 1st paragraph to clear understanding text"
+git push -f
+
+git rm eng/08.3_idea_eng.txt
+git commit -m "upd 08.3"
+git push -f
+
+git add 11_idea.txt
+git commit -m "0.C.6933 all rus gramatical error check"
+git add eng/08.4_idea_eng.txt
+git commit -m "modify some typo fix"
+git push -f
+
+
+
+
+
+
+
+
+
+PNG, JPG, GIF, PSD, SVG
+https://help.github.com/articles/set-up-git/
+https://help.github.com/articles/syncing-a-fork/
+https://help.github.com/articles/fork-a-repo/
+https://guides.github.com/activities/forking/
+
+В оригинальный репозиторий, если у вас нет прав, можно присылать только pull-request'ы
+Из оригинального можно делать просто pull для синхронизации 
+
+git config --global user.name "Mona Lisa"
+git config --global user.name
+> Mona Lisa
+git config --global user.email "email@example.com"
+git config --global user.email
+> email@example.com
+
+# Syncing local fork 1st
+git remote add -f upstream https://github.com/CleverRaven/Cataclysm-DDA.git
+git remote add upstream https://github.com/CleverRaven/Cataclysm-DDA.git
+git remote -v
+git fetch upstream
+git checkout master
+git merge upstream/master
+
+# next time
+git checkout origin/master
+git pull
+
+git clone https://github.com/korick/Redmi6.git
+git remote add origin https://github.com/korick/Redmi6.git
+
+Сообщаем локальному репозиторию о том, где находится главный репозиторий:
+$ git remote add origin gituser@githost:project.git
+Теперь оправляем коммит в главный репозиторий
+$ git push origin master
+Переходим в новый каталог (или вообще на другой комп) и вытягиваем главный репозиторий:
+$ cd /новый/каталог/проекта
+$ git clone gituser@githost:project.git
+Это мы получили копию главного репозитория. В ней находится актуальная ветка. Теперь нужно создать тестовую ветку.
+Просто скопируем актуальную ветку в главный репозиторий под именем тестовой:
+$ git push origin master:stage
+А затем вытянем тестовую ветку из главного репозитория уже под собственным именем:
+$ git checkout -b stage origin/stage
+Теперь локальный репозиторий содержит две ветки, master и stage. Обе ветки связаны с одноименными ветками в главном репозитории.
+В этом локальном репозитории ведущий разработчик будет проверять бранчи, присланные другими разработчиками, и сливать проверенны бранчи с ветками главного репозитория.
+Кроме того, нужно указать местонахождение рабочего репозитория dev:
+$ git remote add dev gituser@githost:dev.git
+...
+Отладочная копия проекта устроена идентично, за исключением того, что после клонирования главного репозитория было сделано переключение с актуальной ветки master на тестовую ветку stage:
+$ git checkout -b stage origin/stage
+Теперь pull в отладке будет вытягивать обновления из тестовой ветки.
+
+
+
+git clone или git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/korick/Redmi6.git
+git push -u origin master
+
+
+FILE TO GITHUB-REPO
+$ git add .
+$ git commit -m "Add existing file"
+$ git push origin master
+
+LOCAL-REPO TO GITHUB
+$ cd project
+$ git init
+$ git add .
+$ git commit -m "Add local project to GitHub"
+# At the top of your GitHub repository Quick Setup page, click to copy remote repository URL
+$ git remote add origin <remote repository URL>
+# Sets the new remote
+$ git remote -v
+# Verifies the new remote URL
+$ git push origin master
+
+…or create a new repository on the command line
+echo "# Redmi6" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/korick/Redmi6.git
+git push -u origin master
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/korick/Redmi6.git
+git push -u origin master
+
+MERGE UPSTREAM-REPO INTO YOUR FORK
+$ git checkout master
+$ git pull <https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git> <BRANCH_NAME>
+# Commit the merge
+# Review the changes and ensure they are satisfactory
+# Push the merge to your GitHub repository
+$ git push origin master
+
+
+git checkout -b <new-feature>
+# создать ветвь new-feature
+git branch new-feature
+# начать в ней работать
+git checkout new-feature
+
+git merge new-feature master
+
+
+git log --oneline --graph --color --all --decorate
+
+## Создание ветви
+git status
+# Создание ветви
+git branch
+# Для переключения между ветвями
+git checkout
+# краткая команда создать ветвь и сразу переключиться на нее
+git checkout -b
+git add commit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+So the first thing you want do after you get access to git on a command line interface is to clone your github repository onto the same computer that you’re running git on. Go to your github page, hit the green “clone or download” button, and then type "git clone " folllowed by the URL they give you.[1] This will download a copy of your repository to your computer.
+
+You can change directory into your new repository, and use the git command line to manipulate the local repository. For instance (I’m looking at your repository on github now, btw), you could do “git reset --hard 47d21c” and that would reset your local repository to only include your first two commits[2]. Then you could push your local repository back up to the github repository by doing “git push --force”, which will overwrite the github repository with the branch history of your local repository.
+
+Alternately, another thing you could and possibly should do is stop editing your mod as a stand alone project, and instead make it a branch of a fork[3] of the main C:DDA repository. The way you would do that is:
+
+    Go to https://github.com/CleverRaven/Cataclysm-DDA
+    Hit the “Fork” button and now you have your own version of C:DDA.
+    Clone that to your local machine with the “Clone or Download” button.
+    Go into your new C:DDA directory and run “git remote add upstream https://github.com/CleverRaven/Cataclysm-DDA”, then “git fetch upstream”, then “git checkout -b upstream-master upstream/master”. That will set your local repository to follow changes in the main C:DDA repository.
+    run “git checkout -b reds-odd-adds upstream-master” to create a new branch based on the latest upstream commit.
+    go back to your Reds-Odd-Additions repository at github, and copy your commits back to your local C:DDA repository. use “git add” to add changes to a commit, and “git commit” to commit your changes. Just put your stuff where it belongs under data/mods/ .
+
+If you’re feeling really adventuresome, you can compile C:DDA on your local machine - which is easy to do under Linux and a pain under Windows (or at least, I haven’t gotten it working but haven’t tried hard).
+Alternately, you can just download the latest verison for your system type and copy the executables into your local C:DDA repository, which is how I actually play C:DDA on Windows.
+
+The reason you want to go through this hassle is that you can periodically pull in all the changes from upstream into your local repository, keeping your game up to date without requiring that you move your save files around or mess with moving your mod.
+
+But that’s a discussion for a slightly later date.
+
+[1] You probably want to select the “use SSH” option, which means setting up your github account to allow SSH. See https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+[2] Your entire repository consists of 2 branches with a total of 3 commits. How much old stuff are you trying to get rid of here?
+[3] A fork is just a new, private version of a project, and is often used to develop changes and then push them back to the main project.
+
+
+run “git checkout -b reds-odd-adds upstream-master” to create a new branch based on the latest upstream commit.
+In general, upstream is the development branch of whatever project you’re working on. So the official C:DDA repository is the upstream in this case, and the most recent commit is the latest upstream commit. On June 18th, that’s commit 9844ca2 (https://github.com/CleverRaven/Cataclysm-DDA/commit/9844ca23ec00315f757da76e6969ba7149ab88fd) but it changes as new commits are added to the upstream repository.
+
+The new branch is created in your local repository (the one you created by cloning the github repository) but you could use git push to push it back to the github repository.
+
+
+
+
+https://github.com/git-for-windows/git/releases/tag/v2.10.0.windows.1
+Git for Windows XP latest PortableGit-2.10.0-32-bit.7z.exe
+
+1)
+Username for 'https://github.com' error: failed to execute prompt script (exit code 1)
+fatal: could not read Username for 'https://github.com': No error
+
+.git/config.file
+delete [remote "origin"] section
+$ git remote add origin https://{username}:{password}@github.com/{username}/project.git
+$ git push
+or
+.git/config.file
+write manualy [remote "origin"] section
+[remote "origin"]
+	url = https://{username}:{password}@github.com/{username}/project.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+2)
+fatal: unable to access SSL certificate problem: certificate is not yet valid
+check your time
+	
+	
+	
+git clone https://github.com/tyrael93/Ascension
+git clone https://github.com/chaosvolt/cdda-arcana-mod
+git clone https://github.com/Dissociativity/PKs_Rebalancing
+git clone https://github.com/pisskop/PKs_Rebalancing
+git clone https://github.com/Noctifer-de-Mortem/nocts_cata_mod
+git clone https://github.com/Siyalatas/PKs_Rebalancing
+git clone https://github.com/CleverRaven/Cataclysm-DDA
+git init https://github.com/CleverRaven/Cataclysm-DDA
+git clone https://github.com/23rd/PotPlayerExtentions
+git init https://github.com/23rd/PotPlayerExtentions
+
+
+cd {project}
+
+git add [.] [--no-all] [dir/file1]
+
+git commit -m "upd" [-F <file> | -m <msg>]
+
+git commit -i vk_changelog.txt -m "mod"
+--file=<filecommitdescription> 
+
+git push -f
+[-f | --force] [--all | --mirror | --tags]
+
+
+
+
+
+
+
+
+https://github.com/search/advanced
+
+https://github.com/The-OP/Fox
+https://github.com/firefoxForUser/esr38config
+https://github.com/amq/fi018 1330-14 Сб,пдм
+долгий нечет 2см
+лисовая нечетrefox-debloat
+https://github.com/TheCreeper/PrivacyFox
+
+https://github.com/cheat-engine/cheat-engine/
+https://github.com/mpc-hc/mpc-hc
+https://github.com/PeridexisErrant/starter-pack
+https://github.com/8HoLoN/Extension-HDS-Link-Detector
+
+https://github.com/CleverRaven/Cataclysm-DDA
+https://github.com/pisskop/PKs_Rebalancing/tags
+https://github.com/jrw-git/cataclysm_utility
+https://www.transifex.com/cataclysm-dda-translators/cataclysm-dda/language/ru/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
