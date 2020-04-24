@@ -96,6 +96,7 @@ https://github.com/korick/2/blob/master/cataclysmdda-0.D-9112.zip
 https://github.com/korick/CDDA/raw/master/12_CDDA_Lore.doc
 
 git status
+git reset
 git add --all
 git add .
 git commit -m "upd"
@@ -110,6 +111,10 @@ git remote add origin gituser@githost:project.git или https://github.com/user
 git push -u origin master
 в .git\config прописываешь имя:пароль чтоб не вводить постоянно url = https://USER:PASSWORD@github.com/user.git
 
+git clone — создание копии (удаленного) репозитория
+git fetch и git pull — забираем изменения из центрального репозитория
+git push — вносим изменения в удаленный репозиторий
+git reset --hard commitId
 # синхронизация Cataclysm-DDA если только ветка origin/master
 git pull
 
@@ -121,6 +126,8 @@ git rm Documentation/\*.txt
 
 # сбросить нафиг весь индекс
 git reset
+git reset HEAD .
+git rm -r --cached .
 
 # удалить из индекса конкретный файл
 git reset — EDITEDFILE
@@ -136,7 +143,23 @@ git commit -m «commit comment»
 # коммит на основе изменений единственного файла
 git commit FILENAME
 
-
+Очистка Истории в Git
+git status
+git reset
+Создайте временную ветку и перейдите в нее:
+$ git checkout --orphan temp_branch
+Опция 	Описание
+--orphan 	Создать ветку в состоянии схожем с git init
+Добавьте все файлы в новую ветку и сделайте коммит изменений:
+$ git add -A
+$ git commit -am "first commit"
+$ git commit -am "upd"
+Удалите master-ветку:
+$ git branch -D master
+Переименуйте временную ветку в master:
+$ git branch -m master
+Принудительно обновите удаленный репозиторий:
+$ git push -f origin master
 
 
 
