@@ -96,8 +96,11 @@ cd SomeDeadGuy/Cata-MSX-DeadPeopleTileset
 cd 23rd/PotPlayerExtentions
 git pull
 
-https://github.com/korick/2/blob/master/cataclysmdda-0.D-9112.zip
-https://github.com/korick/CDDA/raw/master/12_CDDA_Lore.doc
+https://github.com/korick/2
+https://github.com/korick/CDDA
+https://github.com/korick/CDDA/raw/master/CDDA_Lore.doc
+https://github.com/korick/4pda
+https://github.com/korick/
 
 
 git reset
@@ -106,7 +109,10 @@ git log
 git status
 
 git add .
-git commit -m "upd"
+git commit -am "upd"
+git push -f
+
+git add "manual_Redmi_6_test.txt"
 git commit -m "mR6t-release"
 git push -f
 
@@ -125,8 +131,10 @@ url=https://USER:PASSWORD@github.com/user.git
 	merge = refs/heads/master
 
 # отменить последний коммит
-git commit -m "misguided"
-git reset HEAD~1
+git commit -m "mistake"
+git revert HEAD # это полностью команда
+git revert HEAD --no-edit
+git reset HEAD~1 
 << edit files >>
 git add ...
 git commit -c ORIG_HEAD
@@ -412,10 +420,17 @@ https://github.com/CleverRaven/Cataclysm-DDA
 https://github.com/23rd/PotPlayerExtentions
 https://github.com/23rd/PotPlayerExtentions
 
+
 https://github.com/search/advanced
 https://github.com/firefoxForUser/esr38config
+https://github.com/muslayev/iceweasel-win64
+https://github.com/muslayev/icecat-win64
+
 https://github.com/The-OP/Fox
+https://github.com/The-OP/Fox/blob/master/greylist.md#user-content-ublock
 https://github.com/The-OP/Fox/blob/master/addendum.md#настройки-aboutconfig
+https://github.com/Guest007/e3a09aa97a827916b0b91b726a8c2c66
+
 https://github.com/pyllyukko/user.js#installation откл телеметрия Firefox
 https://github.com/ghacksuserjs/ghacks-user.js
 https://github.com/Crandel/home/blob/master/termux/firefox/user.js#L270
@@ -450,7 +465,7 @@ https://github.com/JustOff/ca-archive
 https://github.com/Skulltrail192/One-Core-Api/ для Win2k3/XP
 https://github.com/Skulltrail192/One-Core-API-Binaries/
 https://github.com/deadlyjack/code-editor Acode
-
+https://gitlab.com/fdroid/rfp/issues f-droid
 
 
 
