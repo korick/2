@@ -94,14 +94,15 @@ cd Dissociativity/PKs_Rebalancing
 cd Siyalatas/PKs_Rebalancing
 cd SomeDeadGuy/Cata-MSX-DeadPeopleTileset
 cd 23rd/PotPlayerExtentions
-git pull
 
+https://github.com/korick/
 https://github.com/korick/2
 https://github.com/korick/CDDA
 https://github.com/korick/CDDA/raw/master/CDDA_Lore.doc
 https://github.com/korick/4pda
-https://github.com/korick/
 
+
+git pull
 
 git reset
 git add --all
@@ -112,8 +113,10 @@ git add .
 git commit -am "upd"
 git push -f
 
+git clone https://github.com/SomeDeadGuy/UndeadPeopleTileset.git
+
 git add "manual_Redmi_6_test.txt"
-git commit -m "mR6t-release"
+git commit -m "mR6t_rupd"
 git push -f
 
 # создание нового репозитория ветка master: запросит имя и пароль
@@ -401,24 +404,30 @@ git push -f
 
 
 
-https://github.com/korick/CDDA.git
-https://github.com/korick/2.git
-https://github.com/korick/Redmi_6.git
-https://github.com/transifex/transifex-client.git
-https://github.com/CleverRaven/Cataclysm-DDA.git
-https://github.com/pisskop/PKs_Rebalancing.git
-https://github.com/Noctifer-de-Mortem/nocts_cata_mod.git
-https://github.com/redxlaser15/Reds-Odd-Additions.git
-https://github.com/tyrael93/Ascension
+
+https://github.com/transifex/transifex-client
+https://github.com/CleverRaven/Cataclysm-DDA
+https://github.com/TheGoatGod/Goats-Mod-Compilation Huge-Mods-Pack
+https://github.com/SomeDeadGuy/UndeadPeopleTileset
+https://github.com/dissociativity/PKs_Rebalancing
+https://github.com/Siyalatas/PKs_Rebalancing old
+https://github.com/pisskop/PKs_Rebalancing old
 https://github.com/chaosvolt/cdda-arcana-mod
-https://github.com/Dissociativity/PKs_Rebalancing
-https://github.com/pisskop/PKs_Rebalancing
 https://github.com/Noctifer-de-Mortem/nocts_cata_mod
-https://github.com/Siyalatas/PKs_Rebalancing
-https://github.com/CleverRaven/Cataclysm-DDA
-https://github.com/CleverRaven/Cataclysm-DDA
+https://github.com/foulman/Psioniclysm
+https://discourse.cataclysmdda.org/t/fallout-new-england/17509
+https://discourse.cataclysmdda.org/t/secronom-zombies-mod-thread/16211
+https://github.com/foulman/Fantasy
+https://github.com/captainsawbones/Sly_Mutation_Mod_Medley
+https://github.com/redxlaser15/Reds-Odd-Additions
+https://github.com/tyrael93/Ascension
+https://github.com/Kenan2000/BL9
+https://github.com/Kenan2000/Secronom-Zombies
+https://github.com/Kenan2000/Otopack-Mods-Updates soundpack
+
+
 https://github.com/23rd/PotPlayerExtentions
-https://github.com/23rd/PotPlayerExtentions
+
 
 
 https://github.com/search/advanced
@@ -441,6 +450,16 @@ https://github.com/palant/searchlinkfix
 https://github.com/amq/fi018 1330-14 Сб,пдм
 https://github.com/amq/firefox-debloat
 https://github.com/TheCreeper/PrivacyFox
+Есть ли под Pale Moon какой-то аналог ClearURLs https://github.com/ClearURLs/Addon
+- есть похожее расширение, но оно без фильтров https://addons.palemoon.org/addon/modify-http-response/
+фильтры от ClearURLs есть здесь https://gitlab.com/KevinRoebert/ClearUrls/raw/master/data/data.min.json
+но я, не представляю, можно ли их туда прикрутить и как.
+- PureURL версии 1.2.3 https://addons.palemoon.org/releases/pureurl4pm/
+с версии 2.0 автор сильно переделал расширение и мне не очень понравился новый вариант.
+это расширение я успешно установил и использую [?] также в FF 52 и Serpent 52
+https://github.com/Feodor2/Mypal/releases
+https://github.com/Feodor2/Centaury/releases
+
 https://github.com/cheat-engine/cheat-engine/
 https://github.com/pavel-pimenov/flylinkdc-r5xx
 https://github.com/mpc-hc/mpc-hc
