@@ -19,7 +19,7 @@ checkout проверять
 pull вытащить
 push толкнуть
 commit коммит
-remote удаленный
+remote удалённый
 upstream обновлённое
 merge слияние
 workflow рабочий процесс
@@ -81,6 +81,11 @@ git checkout master
 git checkout -f
 git status
 
+# скачать весь репо, ветку master.zip
+https://github.com/<user>/<repo>/archive/<ref>.zip
+https://github.com/django/django/archive/master.zip
+https://github.com/Kenan2000/CDDA-Kenan-Modpack/archive/master.zip
+
 # внести в индекс все изменения, включая все новые файлы
 cd
 ls
@@ -96,11 +101,15 @@ cd SomeDeadGuy/Cata-MSX-DeadPeopleTileset
 cd 23rd/PotPlayerExtentions
 
 https://github.com/korick/
-https://github.com/korick/2
-https://github.com/korick/CDDA
+https://github.com/korick/2.git
+https://github.com/korick/CDDA.git
 https://github.com/korick/CDDA/raw/master/CDDA_Lore.doc
-https://github.com/korick/4pda
+https://github.com/korick/4pda.git
 
+
+http://githubuniverse.com Join us (virtually) December 8-10 for 3 days of content, customizable tracks, and the latest from GitHub. 
+
+git clone https://github.com/SomeDeadGuy/UndeadPeopleTileset.git
 
 git pull
 
@@ -110,13 +119,11 @@ git log
 git status
 
 git add .
-git commit -am "upd"
+git commit -m "upd"
 git push -f
 
-git clone https://github.com/SomeDeadGuy/UndeadPeopleTileset.git
-
-git add "manual_Redmi_6_test.txt"
-git commit -m "mR6t_rupd"
+git add "manual_Redmi_6.txt"
+git commit -m "mR6_r_upd"
 git push -f
 
 # создание нового репозитория ветка master: запросит имя и пароль
@@ -404,11 +411,19 @@ git push -f
 
 
 
+https://github.com/search/advanced
+https://github.com/settings/applications Authorized OAuth Apps
+https://github.com/settings/security-log
 
 https://github.com/transifex/transifex-client
+https://github.com/PeridexisErrant/starter-pack
 https://github.com/CleverRaven/Cataclysm-DDA
+https://github.com/remyroy/CDDA-Game-Launcher
 https://github.com/TheGoatGod/Goats-Mod-Compilation Huge-Mods-Pack
-https://github.com/SomeDeadGuy/UndeadPeopleTileset
+https://github.com/Kenan2000/CDDA-Kenan-Modpack Huge-Mods-Pack
+https://github.com/SomeDeadGuy/UndeadPeopleTileset Tileset
+https://github.com/I-am-Erk/CDDA-Tilesets/ new official Tileset 
+https://codeload.github.com/chaosvolt/Cata-MSX-DeadPeopleTileset-Backup/zip/master
 https://github.com/dissociativity/PKs_Rebalancing
 https://github.com/Siyalatas/PKs_Rebalancing old
 https://github.com/pisskop/PKs_Rebalancing old
@@ -421,7 +436,7 @@ https://github.com/foulman/Fantasy
 https://github.com/captainsawbones/Sly_Mutation_Mod_Medley
 https://github.com/redxlaser15/Reds-Odd-Additions
 https://github.com/tyrael93/Ascension
-https://github.com/Kenan2000/BL9
+https://github.com/Kenan2000/BL9 > v10981+
 https://github.com/Kenan2000/Secronom-Zombies
 https://github.com/Kenan2000/Otopack-Mods-Updates soundpack
 
@@ -430,21 +445,23 @@ https://github.com/23rd/PotPlayerExtentions
 
 
 
-https://github.com/search/advanced
+
 https://github.com/firefoxForUser/esr38config
 https://github.com/muslayev/iceweasel-win64
 https://github.com/muslayev/icecat-win64
 
+https://github.com/asciimoo/morty HTML sanitizer proxy service
 https://github.com/The-OP/Fox
 https://github.com/The-OP/Fox/blob/master/greylist.md#user-content-ublock
 https://github.com/The-OP/Fox/blob/master/addendum.md#настройки-aboutconfig
-https://github.com/Guest007/e3a09aa97a827916b0b91b726a8c2c66
+https://github.com/Guest007/Rosenfox
 
 https://github.com/pyllyukko/user.js#installation откл телеметрия Firefox
-https://github.com/ghacksuserjs/ghacks-user.js
+https://github.com/arkenfox/user.js
 https://github.com/Crandel/home/blob/master/termux/firefox/user.js#L270
-https://github.com/Crandel/home/blob/master/termux/firefox/chrome/userChrome.css userContent.css стили Настройка внешнего вида Firefox лёгкий фикс
-prefs.js работает без ваших принуждений, т.к. именно в нём хранятся все изменённые значения настроек;
+https://github.com/Crandel/home/blob/master/termux/firefox/chrome/userChrome.css
+userContent.css стили Настройка внешнего вида Firefox лёгкий фикс
+prefs.js работает без ваших принуждений, т.к. в нём хранятся все изменённые значения настроек;
 user.js нужен для переопределения и блокировки значений отдельных настроек от изменений (эти изменения можно вносить во время сеанса, после перезапуска они будут сброшены на указанное в файле значение)
 https://github.com/palant/searchlinkfix
 https://github.com/amq/fi018 1330-14 Сб,пдм
@@ -459,14 +476,16 @@ https://github.com/TheCreeper/PrivacyFox
 это расширение я успешно установил и использую [?] также в FF 52 и Serpent 52
 https://github.com/Feodor2/Mypal/releases
 https://github.com/Feodor2/Centaury/releases
+https://github.com/ray-lothian/UserAgent-Switcher
+https://github.com/JustOff/ca-archive Catalog classic Firefox add-ons created before WebExtensions apocalypse
+
 
 https://github.com/cheat-engine/cheat-engine/
 https://github.com/pavel-pimenov/flylinkdc-r5xx
 https://github.com/mpc-hc/mpc-hc
-https://github.com/PeridexisErrant/starter-pack
 https://github.com/8HoLoN/Extension-HDS-Link-Detector
-https://github.com/CleverRaven/Cataclysm-DDA
-https://github.com/pisskop/PKs_Rebalancing/tags
+
+
 https://github.com/jrw-git/cataclysm_utility
 https://www.transifex.com/cataclysm-dda-translators/cataclysm-dda/language/ru/
 https://github.com/Franiac/TwitchLeecher
@@ -476,30 +495,17 @@ https://github.com/Shail-Shouryya/yt_videos_list
 https://github.com/BennyJeanZ/Fetch-Youtube-Data
 + https://github.com/dbeley/youtube_extract
 + Automate http://gallery.ru-board.com/topic.cgi?forum=5&topic=3782
-https://github.com/ray-lothian/UserAgent-Switcher
-Catalog of classic Firefox add-ons created before WebExtensions apocalypse
-https://github.com/JustOff/ca-archive
-Проект основан на наработках ReactOS Development Team и Wine Team
-Добавляет в WinXP/2k3 частичную поддержку DirectX11 и позволяет запускать некоторые приложения для более новых систем
 https://github.com/Skulltrail192/One-Core-Api/ для Win2k3/XP
 https://github.com/Skulltrail192/One-Core-API-Binaries/
+Проект основан на наработках ReactOS Development Team и Wine Team
+Добавляет в WinXP/2k3 частичную поддержку DirectX11 и позволяет запускать некоторые приложения для более новых систем
 https://github.com/deadlyjack/code-editor Acode
 https://gitlab.com/fdroid/rfp/issues f-droid
+https://github.com/microsoft/PowerToys TuneUp Windows10
+https://github.com/ilius/pyglossary
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+https://github.com/nilaoda/N_m3u8DL-CLI/blob/master/README_ENG.md m3u8DL
+https://github.com/MattMcManis/Axiom youtube и FFmpeg GUI. удобно копировать последовательность команды для youtube.
 
 
 
