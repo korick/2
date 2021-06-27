@@ -87,9 +87,11 @@ https://github.com/django/django/archive/master.zip
 https://github.com/Kenan2000/CDDA-Kenan-Modpack/archive/master.zip
 
 # внести в индекс все изменения, включая все новые файлы
-cd
-ls
 cd ..
+ls
+cd 2
+cd 4pda
+св CDDA
 
 cd CleverRaven/Cataclysm-DDA
 cd Noctifer-de-Mortem/nocts_cata_mod
@@ -111,13 +113,15 @@ http://githubuniverse.com Join us (virtually) December 8-10 for 3 days of conten
 
 git clone https://github.com/SomeDeadGuy/UndeadPeopleTileset.git
 
+# обновить свою копию чужого репо
 git pull
 
 git reset
-git add --all
-git log
 git status
+git log
+git add --all
 
+# залить изменения своего репо
 git add .
 git commit -m "upd"
 git push -f
@@ -156,7 +160,7 @@ $ git reset
 $ git checkout --orphan temp_branch
 --orphan  # Создать ветку в состоянии схожем с git init
 Добавьте все файлы в новую ветку и сделайте коммит изменений:
-$ git add -A
+$ git add --all
 $ git commit -am "first commit"
 Удалите master-ветку:
 $ git branch -D master
@@ -173,8 +177,7 @@ git remote add origin gituser@githost:project.git
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
-	
-	
+
 git clone - создание копии (удаленного) репозитория
 git fetch и git pull - забираем изменения из центрального репозитория
 git push - вносим изменения в удаленный репозиторий
@@ -411,22 +414,26 @@ git push -f
 
 
 
+
 https://github.com/search/advanced
-https://github.com/settings/applications Authorized OAuth Apps
+https://github.com/settings/applications #Authorized OAuth Apps
 https://github.com/settings/security-log
 
 https://github.com/transifex/transifex-client
 https://github.com/PeridexisErrant/starter-pack
-https://github.com/CleverRaven/Cataclysm-DDA
+https://github.com/CleverRaven/Cataclysm-DDA #CDDA
+https://github.com/cataclysmbnteam/Cataclysm-BN #CBN
 https://github.com/remyroy/CDDA-Game-Launcher
-https://github.com/TheGoatGod/Goats-Mod-Compilation Huge-Mods-Pack
-https://github.com/Kenan2000/CDDA-Kenan-Modpack Huge-Mods-Pack
-https://github.com/SomeDeadGuy/UndeadPeopleTileset Tileset
-https://github.com/I-am-Erk/CDDA-Tilesets/ new official Tileset 
+https://github.com/GMC-Modding-Team/Community-Mod-Compilation-Deprecated #Huge-Mods-Pack-TheGoatGod original
+https://github.com/GMC-Modding-Team/Community-Mod-Compilation-redux #Huge-Mods-Pack-TheGoatGod Goats-Dark_Days
+https://github.com/Kenan2000/CDDA-Kenan-Modpack #Huge-Mods-Pack Kenans personal modpack for CDDA
+https://github.com/Kenan2000/Bright-Nights-Kenan-Mod-Pack #Huge-Mods-Pack Kenans personal modpack for CBN
+https://github.com/SomeDeadGuy/UndeadPeopleTileset #Tileset
+https://github.com/I-am-Erk/CDDA-Tilesets/ #new official Tileset 
 https://codeload.github.com/chaosvolt/Cata-MSX-DeadPeopleTileset-Backup/zip/master
 https://github.com/dissociativity/PKs_Rebalancing
-https://github.com/Siyalatas/PKs_Rebalancing old
-https://github.com/pisskop/PKs_Rebalancing old
+https://github.com/Siyalatas/PKs_Rebalancing #old
+https://github.com/pisskop/PKs_Rebalancing #old
 https://github.com/chaosvolt/cdda-arcana-mod
 https://github.com/Noctifer-de-Mortem/nocts_cata_mod
 https://github.com/foulman/Psioniclysm
@@ -436,9 +443,9 @@ https://github.com/foulman/Fantasy
 https://github.com/captainsawbones/Sly_Mutation_Mod_Medley
 https://github.com/redxlaser15/Reds-Odd-Additions
 https://github.com/tyrael93/Ascension
-https://github.com/Kenan2000/BL9 > v10981+
+https://github.com/Kenan2000/BL9 # > v10981+
 https://github.com/Kenan2000/Secronom-Zombies
-https://github.com/Kenan2000/Otopack-Mods-Updates soundpack
+https://github.com/Kenan2000/Otopack-Mods-Updates #soundpack
 
 
 https://github.com/23rd/PotPlayerExtentions
@@ -450,13 +457,13 @@ https://github.com/firefoxForUser/esr38config
 https://github.com/muslayev/iceweasel-win64
 https://github.com/muslayev/icecat-win64
 
-https://github.com/asciimoo/morty HTML sanitizer proxy service
+https://github.com/asciimoo/morty #HTML sanitizer proxy service
 https://github.com/The-OP/Fox
 https://github.com/The-OP/Fox/blob/master/greylist.md#user-content-ublock
 https://github.com/The-OP/Fox/blob/master/addendum.md#настройки-aboutconfig
 https://github.com/Guest007/Rosenfox
 
-https://github.com/pyllyukko/user.js#installation откл телеметрия Firefox
+https://github.com/pyllyukko/user.js#installation #откл телеметрия Firefox
 https://github.com/arkenfox/user.js
 https://github.com/Crandel/home/blob/master/termux/firefox/user.js#L270
 https://github.com/Crandel/home/blob/master/termux/firefox/chrome/userChrome.css
@@ -464,7 +471,7 @@ userContent.css стили Настройка внешнего вида Firefox 
 prefs.js работает без ваших принуждений, т.к. в нём хранятся все изменённые значения настроек;
 user.js нужен для переопределения и блокировки значений отдельных настроек от изменений (эти изменения можно вносить во время сеанса, после перезапуска они будут сброшены на указанное в файле значение)
 https://github.com/palant/searchlinkfix
-https://github.com/amq/fi018 1330-14 Сб,пдм
+https://github.com/amq/fi018 #1330-14 Сб,пдм
 https://github.com/amq/firefox-debloat
 https://github.com/TheCreeper/PrivacyFox
 Есть ли под Pale Moon какой-то аналог ClearURLs https://github.com/ClearURLs/Addon
@@ -477,37 +484,37 @@ https://github.com/TheCreeper/PrivacyFox
 https://github.com/Feodor2/Mypal/releases
 https://github.com/Feodor2/Centaury/releases
 https://github.com/ray-lothian/UserAgent-Switcher
-https://github.com/JustOff/ca-archive Catalog classic Firefox add-ons created before WebExtensions apocalypse
+https://github.com/JustOff/ca-archive #Catalog classic Firefox add-ons created before WebExtensions apocalypse
 
 
 https://github.com/cheat-engine/cheat-engine/
 https://github.com/pavel-pimenov/flylinkdc-r5xx
 https://github.com/mpc-hc/mpc-hc
 https://github.com/8HoLoN/Extension-HDS-Link-Detector
-
-
 https://github.com/jrw-git/cataclysm_utility
 https://www.transifex.com/cataclysm-dda-translators/cataclysm-dda/language/ru/
 https://github.com/Franiac/TwitchLeecher
-https://github.com/m-julian/Youtube-playlist-title-and-url-downloader
-https://github.com/jasperan/youtube-crawler
-https://github.com/Shail-Shouryya/yt_videos_list
-https://github.com/BennyJeanZ/Fetch-Youtube-Data
-+ https://github.com/dbeley/youtube_extract
-+ Automate http://gallery.ru-board.com/topic.cgi?forum=5&topic=3782
-https://github.com/Skulltrail192/One-Core-Api/ для Win2k3/XP
+https://github.com/Skulltrail192/One-Core-Api/ #для Win2k3/XP
 https://github.com/Skulltrail192/One-Core-API-Binaries/
 Проект основан на наработках ReactOS Development Team и Wine Team
 Добавляет в WinXP/2k3 частичную поддержку DirectX11 и позволяет запускать некоторые приложения для более новых систем
-https://github.com/deadlyjack/code-editor Acode
-https://gitlab.com/fdroid/rfp/issues f-droid
-https://github.com/microsoft/PowerToys TuneUp Windows10
+https://github.com/deadlyjack/code-editor #Acode
+https://gitlab.com/fdroid/rfp/issues #f-droid
+https://github.com/microsoft/PowerToys #TuneUp W10
 https://github.com/ilius/pyglossary
 
-https://github.com/nilaoda/N_m3u8DL-CLI/blob/master/README_ENG.md m3u8DL
-https://github.com/MattMcManis/Axiom youtube и FFmpeg GUI. удобно копировать последовательность команды для youtube.
 
-
+https://github.com/ytdl-org/youtube-dl/blob/master/README.md
+https://github.com/pystardust/ytfzf #Скрипт posix, находит видео Youtube (без API) открывать/загружать mpv/youtube-dl терминал
+https://github.com/Shail-Shouryya/yt_videos_list
+https://github.com/BennyJeanZ/Fetch-Youtube-Data
+https://github.com/m-julian/Youtube-playlist-title-and-url-downloader
+https://github.com/jasperan/youtube-crawler
+https://github.com/nilaoda/N_m3u8DL-CLI/blob/master/README_ENG.md #m3u8DL
+https://github.com/MattMcManis/Axiom #youtube и FFmpeg GUI. удобно копировать последовательность команды для youtube.
++ https://github.com/dbeley/youtube_extract
++ Automate http://gallery.ru-board.com/topic.cgi?forum=5&topic=3782
+https://github.com/m417z/Textify
 
 
 
