@@ -87,11 +87,11 @@ https://github.com/django/django/archive/master.zip
 https://github.com/Kenan2000/CDDA-Kenan-Modpack/archive/master.zip
 
 # внести в индекс все изменения, включая все новые файлы
-cd ..
 ls
+cd ..
 cd 2
+cd CDDA
 cd 4pda
-св CDDA
 
 cd CleverRaven/Cataclysm-DDA
 cd Noctifer-de-Mortem/nocts_cata_mod
@@ -108,6 +108,7 @@ https://github.com/korick/CDDA.git
 https://github.com/korick/CDDA/raw/master/CDDA_Lore.doc
 https://github.com/korick/4pda.git
 
+https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/
 
 http://githubuniverse.com Join us (virtually) December 8-10 for 3 days of content, customizable tracks, and the latest from GitHub. 
 
@@ -117,11 +118,12 @@ git clone https://github.com/SomeDeadGuy/UndeadPeopleTileset.git
 git pull
 
 git reset
-git status
 git log
+git status
 git add --all
 
 # залить изменения своего репо
+git status
 git add .
 git commit -m "upd"
 git push -f
@@ -457,12 +459,11 @@ https://github.com/firefoxForUser/esr38config
 https://github.com/muslayev/iceweasel-win64
 https://github.com/muslayev/icecat-win64
 
+https://github.com/Guest007/Rosenfox
 https://github.com/asciimoo/morty #HTML sanitizer proxy service
 https://github.com/The-OP/Fox
 https://github.com/The-OP/Fox/blob/master/greylist.md#user-content-ublock
 https://github.com/The-OP/Fox/blob/master/addendum.md#настройки-aboutconfig
-https://github.com/Guest007/Rosenfox
-
 https://github.com/pyllyukko/user.js#installation #откл телеметрия Firefox
 https://github.com/arkenfox/user.js
 https://github.com/Crandel/home/blob/master/termux/firefox/user.js#L270
@@ -484,8 +485,8 @@ https://github.com/TheCreeper/PrivacyFox
 https://github.com/Feodor2/Mypal/releases
 https://github.com/Feodor2/Centaury/releases
 https://github.com/ray-lothian/UserAgent-Switcher
-https://github.com/JustOff/ca-archive #Catalog classic Firefox add-ons created before WebExtensions apocalypse
-
+https://github.com/JustOff/ca-archive/releases #Catalog classic Firefox add-ons created before WebExtensions apocalypse
+https://github.com/gorhill/uBlock-for-firefox-legacy/releases
 
 https://github.com/cheat-engine/cheat-engine/
 https://github.com/pavel-pimenov/flylinkdc-r5xx
